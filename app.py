@@ -24,9 +24,10 @@ with col1:
 
 with col2:
   st.subheader("Esta es la segunda columna")
-  st.write("Las interfaces multimodales mejoran la experiencia de usuario")
-  resp = st.checkbox('Estoy de acuerdo')
-  if resp:
-    st.write('¡Correcto!')
-  elif:
-    st.write('Nada que ver bro')
+  modo = st.radio("¿Qué modalidad es la principal en tu interfaz?", ('Visual', 'Auditiva', 'Táctil'))
+  if modo == 'Visual':
+    st.write("La vista es fundamental para tu interfaz")
+  if modo == 'Auditiva':
+    st.write("La audición es fundamental para tu interfaz")
+  if modo == 'Táctil':
+    st.write("El tacto es fundamental para tu interfaz")
